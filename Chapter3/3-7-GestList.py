@@ -1,3 +1,32 @@
-floob = ['Shauna', 'Alyssa', 'Austin']
+guestList = ['Shauna', 'Alyssa', 'Austin', 'Ross']
 print("The following will attend or else:")
-print(*floob)
+print(*guestList)
+notAvailable = 'Ross'
+guestList.remove(notAvailable)
+print(f"Unfortuantely, {notAvailable} cannot attend.")
+newGuest = 'Rubble'
+guestList.append(newGuest)
+print("New guest list:")
+print(*guestList)
+guestList.insert(0,'Female')
+guestList.insert(3,'Buddy')
+guestList.append('Chase')
+print("New guests are able to attend.  New guest list:")
+print(*guestList)
+firstPop = guestList.pop()
+secondPop = guestList.pop()
+thirdPop = guestList.pop()
+fourthPop = guestList.pop()
+fifthPop = guestList.pop()
+print("Turns out, only two guests can attend after all.")
+print(f"Sorry, {firstPop}, you've been voted off the island.")
+print(f"Sorry, {secondPop}, you've been voted off the island.")
+print(f"Sorry, {thirdPop}, you've been voted off the island.")
+print(f"Sorry, {fourthPop}, you've been voted off the island.")
+print(f"Sorry, {fifthPop}, you've been voted off the island.")
+print("New guest list:")
+print(*guestList)
+del guestList[0]
+del guestList[0]
+print("You know what, to heck with the whole thing.  New guest list:")
+print(*guestList)
