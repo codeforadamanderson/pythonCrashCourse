@@ -1,4 +1,5 @@
 def city_country(city, country):
+    """Print city and country properly formatted."""
     formatted_city = f"{city}, {country}"
     return formatted_city.title()
 

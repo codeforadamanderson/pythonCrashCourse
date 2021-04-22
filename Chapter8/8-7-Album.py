@@ -1,4 +1,5 @@
 def make_album(artist_name, album_title):
+    """Print artist and album."""
     artist_album = {'artist': artist_name, 'album': album_title}
     return artist_album
 

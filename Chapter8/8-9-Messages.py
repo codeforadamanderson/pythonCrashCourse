@@ -1,4 +1,5 @@
 def show_messages(messages):
+    """Print supplied messages."""
     for message in messages:
         print(message.upper())
 
