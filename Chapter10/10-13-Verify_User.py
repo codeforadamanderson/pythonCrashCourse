@@ -23,7 +23,15 @@ def greet_user():
     """Greet the user by name."""
     username = get_stored_username()
     if username:
-        print(f"Welcome back, {username}!")
+        test = input(f"Are you {username} (Y/N)? ")
+        if test.capitalize() == 'N':
+            username = get_new_username()
+            print("Sorry about that.  "
+            f"We'll remember you next time {username}.")
+        elif test.capitalize() == 'Y':
+            print(f"Welcome back, {username}.")
+        else:
+            print("You didn't enter a valid response.")
     else:
         username = get_new_username()
         print(f"We'll remember you when you come back, {username}!")
